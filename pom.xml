@@ -10,6 +10,7 @@
     <version>1.0</version>
     <modules>
         <module>part2</module>
+        <module>part3</module>
     </modules>
     <properties>
         <!--Encoding-->

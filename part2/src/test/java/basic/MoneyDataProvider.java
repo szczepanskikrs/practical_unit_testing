@@ -3,6 +3,7 @@ package basic;
 import org.testng.annotations.DataProvider;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class MoneyDataProvider {
     @DataProvider
@@ -28,6 +29,10 @@ public class MoneyDataProvider {
 
             @Override
             public Object[] next() {
+                //exception for sake of clean code
+                if (counter > 20) {
+                    throw new NoSuchElementException();
+                }
                 counter++;
                 if (counter % 2 == 0)
                     return new Object[]{counter, null};
@@ -48,6 +53,10 @@ public class MoneyDataProvider {
 
             @Override
             public Object[] next() {
+                //exception for sake of clean code
+                if (counter > 0) {
+                    throw new NoSuchElementException();
+                }
                 counter++;
                 return new Object[]{counter, "USD"};
             }
