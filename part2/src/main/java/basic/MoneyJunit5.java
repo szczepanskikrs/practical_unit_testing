@@ -7,7 +7,7 @@ public class MoneyJunit5 {
     private final String currency;
 
     MoneyJunit5(int amount, String currency) {
-        //throwing exceptions in constructor is bad
+
         if (amount <= 0) {
             throw new IllegalArgumentException("Amount can't be 0 or less");
         }
