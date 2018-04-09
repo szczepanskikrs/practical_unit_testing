@@ -1,0 +1,4 @@
+package mockito;
+
+interface Message {
+}
