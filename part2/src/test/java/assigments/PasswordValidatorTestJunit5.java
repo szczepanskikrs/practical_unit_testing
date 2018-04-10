@@ -60,6 +60,5 @@ class PasswordValidatorTestJunit5 {
         result = passwordValidator.validate(correctString);
         //then
         assertThat(result).isEqualTo(expectedResult);
-
     }
 }
