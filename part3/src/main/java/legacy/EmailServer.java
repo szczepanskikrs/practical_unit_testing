@@ -1,5 +1,7 @@
 package legacy;
 
-public interface EmailServer {
-    void sendEmail(Email email);
+class EmailServer {
+    void sendEmail(Email email) {
+        //some logic
+    }
 }

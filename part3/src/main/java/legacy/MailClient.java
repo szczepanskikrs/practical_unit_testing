@@ -6,14 +6,7 @@ class MailClient {
     void sendEmail(String address, String title, String body) {
         Email email = generateEmailMessage(address, title, body);
         if (emailServer == null) {
-            emailServer = p -> {
-                new EmailServer() {
-                    @Override
-                    public void sendEmail(Email email) {
-                        // some logic here
-                    }
-                };
-            };
+            emailServer = new EmailServer();
         }
         emailServer.sendEmail(email);
     }
