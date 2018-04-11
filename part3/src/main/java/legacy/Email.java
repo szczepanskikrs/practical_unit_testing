@@ -1,12 +1,11 @@
 package legacy;
 
-class Email {
+public class Email {
     private final String address;
     private final String title;
     private final String body;
 
     Email(String address, String title, String body) {
-
         this.address = address;
         this.title = title;
         this.body = body;
